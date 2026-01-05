@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO List</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/fontawesome.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/solid.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1> &#128466; To Do List &#128466;</h1>
+        <div class="to_do_box">
+            <div class="input-box">
+                <input type="text" name="data" id="data" placeholder="Add a new to do..." autofocus>
+                <button id="addlist">ADD</button>
+                <p id="error">To Do can be empty</p>
+            </div>
+            <div class="delete-box">
+                <div class="select-box">
+                    <input type="checkbox" name="allselect" id="allselect" disabled>
+                    <label for="allselect">Select All</label>
+                </div>
+                <button id="delete-btn">
+                    <i class="fa-solid fa-trash-xmark"></i>
+                </button>
+            </div>
+            <hr style="margin-bottom: 10px;">
+            <div class="list-container" id="list-container">
+            </div>
+            <p id="todoplaceholder">To Do List's Empty</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

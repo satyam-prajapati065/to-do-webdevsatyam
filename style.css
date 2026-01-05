@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Pacifico&family=Playwrite+MX+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=TASA+Orbiter:wght@400..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins", sans-serif;
+    user-select: none;
+}
+.container{
+    min-height: 100vh;
+    width: 100vw;
+    background-color:rgb(232,238,238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    margin-bottom: 1%;
+    text-decoration: underline;
+}
+.to_do_box{
+    height: auto;
+    min-height: 500px;
+    max-height: 80vh;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    position: relative;
+}
+#todoplaceholder{
+    text-align: center;
+    margin-top: 30%;
+    font-size: 1.2rem;
+    color: gray;
+}
+.input-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    position: relative;
+}
+hr{
+    background-color:rgb(240, 240, 240);
+}
+.input-box input{
+    width: 75%;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 12px;
+}
+.input-box button{
+    width:20%;
+    background-color:#3da33d;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.input-box button:hover{
+    background-color: #60b160;
+}
+#error{
+    position: absolute;
+    top:100%;
+    font-size: 12px;
+    left: 2%;
+    color: red;
+    display: none;
+}
+
+.list-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+
+.list-container::-webkit-scrollbar{
+    display: none;
+}
+.delete-box{
+    padding: 10px;
+    display: flex; 
+    justify-content: space-between; 
+    margin: 8px 5px;
+}
+.select-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+}
+.delete-box input,.select{
+    height:20px;
+    width: 20px;
+    cursor: pointer;
+}
+.delete-box label{
+    cursor: pointer;
+}
+.delete-box button{
+    background-color:transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.delete-box button i{
+    font-size: 20px;
+}
+
+.list{
+    width: 100%;
+    background-color: white;
+    padding: 5px 20px;
+    display: flex;
+    justify-content:start;
+    gap: 8px;
+    position: relative;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    border: 1px solid gray;
+}
+.list p{
+    width: 73%;
+    height:auto;
+    padding:0 10px;
+    word-wrap: break-word;
+}
+.list .update{
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    color: Green;
+    font-size: 16px;
+    position: absolute;
+    right: 15px;
+    top:12px;
+    cursor: pointer;
+}
